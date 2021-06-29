@@ -1,0 +1,381 @@
+// This is the project stylesheet
+
+// Colors
+$alpha-black-02: rgba(158, 158, 158, 0.2);
+$alpha-black-04: rgba(158, 158, 158, 0.4);
+$alpha-danger-04: rgba(228, 82, 82, 0.4);
+$alpha-info-04: rgba(89, 192, 222, 0.4);
+$alpha-primary-02: rgba(89, 192, 222, 0.2);
+$alpha-primary-04: rgba(4, 123, 248, 0.4);
+$alpha-success-04: rgba(34, 179, 21, 0.4);
+$alpha-warning-02: rgba(249, 228, 160, 0.2);
+$alpha-warning-04: rgba(249, 228, 160, 0.4);
+$solid-black-10: rgba(245, 245, 245, 1);
+$solid-black-40: rgba(222, 222, 222, 1);
+$solid-black-5: rgba(250, 250, 250, 1);
+$solid-black-60: rgba(158, 158, 158, 1);
+$solid-black-80: rgba(66, 66, 66, 1);
+$solid-black-90: rgba(33, 33, 33, 1);
+$solid-danger-50: rgba(214, 59, 48, 1);
+$solid-danger-5: rgba(214, 59, 48, .16);
+$solid-danger-60: rgba(196, 60, 72, 1);
+$solid-info-50: rgba(89, 192, 222, 1);
+$solid-info-60: rgba(64, 154, 190, 1);
+$solid-primary-10: rgba(203, 238, 255, 1);
+$solid-primary-40: rgba(64, 166, 250, 1);
+$solid-primary-50: rgba(4, 123, 248, 1);
+$solid-primary-60: rgba(1, 96, 215, 1);
+$solid-success-50: rgba(34, 179, 21, 1);
+$solid-success-60: rgba(15, 153, 13, 1);
+$solid-warning-50: rgba(249, 228, 160, 1);
+$solid-warning-60: rgba(213, 189, 116, 1);
+$transparent: rgba(255, 255, 255, 0);
+$white: rgba(255, 255, 255, 1);
+$primary: #222b45;
+
+// Text colors
+$text-alpha-black-04: rgba(158, 158, 158, 0.4);
+$text-alpha-primary-04: rgba(4, 123, 248, 0.4);
+$text-solid-black-60: rgba(158, 158, 158, 1);
+$text-solid-black-80: rgba(66, 66, 66, 1);
+$text-solid-danger-50: rgba(228, 82, 82, 1);
+$text-solid-danger-80: rgba(131, 27, 54, 1);
+$text-solid-info-50: rgba(89, 192, 222, 1);
+$text-solid-primary-10: rgba(203, 238, 255, 1);
+$text-solid-primary-40: rgba(64, 166, 250, 1);
+$text-solid-primary-50: rgba(4, 123, 248, 1);
+$text-solid-success-50: rgba(34, 179, 21, 1);
+$text-solid-warning-50: rgba(249, 228, 160, 1);
+$text-white: rgba(255, 255, 255, 1);
+/* width */
+::-webkit-scrollbar {
+  width: 2px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 5px $solid-black-40; 
+  border-radius: 10%;
+}
+ 
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: $solid-danger-50; 
+  border-radius: 10%;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: $solid-danger-50; 
+}
+// Typographies
+@mixin roboto-10-bold {
+  font-family: "Roboto";
+  font-size: 10px;
+  font-weight: 700;
+  line-height: 16px;
+}
+@mixin roboto-10-normal {
+  font-family: "Roboto";
+  font-size: 10px;
+  font-weight: 400;
+  line-height: 16px;
+}
+@mixin roboto-10-semibold {
+  font-family: "Roboto";
+  font-size: 10px;
+  font-weight: 600;
+  line-height: 16px;
+}
+@mixin roboto-12-bold {
+  font-family: "Roboto";
+  font-size: 12px;
+  font-weight: 700;
+  line-height: 20px;
+}
+@mixin roboto-12-normal {
+  font-family: "Roboto";
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 20px;
+}
+@mixin roboto-12-semibold {
+  font-family: "Roboto";
+  font-size: 12px;
+  font-weight: 600;
+  line-height: 20px;
+}
+@mixin roboto-14-normal {
+  font-family: "Roboto";
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 24px;
+}
+@mixin roboto-14-semibold {
+  font-family: "Roboto";
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 24px;
+}
+@mixin roboto-16-bold {
+  font-family: "Roboto";
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 24px;
+}
+@mixin roboto-16-normal {
+  font-family: "Roboto";
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+}
+@mixin roboto-16-semibold {
+  font-family: "Roboto";
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 24px;
+}
+@mixin roboto-16-semibold-r {
+  font-family: "Roboto";
+  font-size: min(max(10px, 2vw), 16px);
+  font-weight: 600;
+  line-height: 24px;
+}
+@mixin roboto-18-normal {
+  font-family: "Roboto";
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 32px;
+}
+@mixin roboto-18-bold {
+  font-family: "Roboto";
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 32px;
+}
+@mixin roboto-20-bold {
+  font-family: "Roboto";
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 32px;
+}
+@mixin roboto-20-semibold {
+  font-family: "Roboto";
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 32px;
+}
+@mixin roboto-24-normal {
+  font-family: "Roboto";
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 36px;
+}
+@mixin roboto-24-semibold {
+  font-family: "Roboto";
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 36px;
+}
+@mixin roboto-32-bold {
+  font-family: "Roboto";
+  font-size: 32px;
+  font-weight: 700;
+  line-height: 48px;
+}
+@mixin roboto-32-semibold {
+  font-family: "Roboto";
+  font-size: 32px;
+  font-weight: 600;
+  line-height: 48px;
+}
+@mixin roboto-36-bold {
+  font-family: "Roboto";
+  font-size: 36px;
+  font-weight: 700;
+  line-height: 48px;
+}
+@mixin roboto-56-semibold {
+  font-family: "Roboto";
+  font-size: 56px;
+  font-weight: 600;
+  line-height: 84px;
+}
+@mixin roboto-88-semibold {
+  font-family: "Roboto";
+  font-size: 88px;
+  font-weight: 600;
+  line-height: 100px;
+}
+
+p {
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+
+
+.actions,.actions-icons{
+  cursor: pointer;
+}
+.actions-icons.navigation{
+  margin-right: 20px;
+}
+.no-content{	
+  display: block;    
+  text-align: center;
+  .msg-container{
+    // background-color: $alpha-info-04;
+    margin: 20px;
+    border-radius: 8px;
+    height: 36px;
+    display: inline-flex;
+    align-items: center;
+  }
+  .error-container{
+    background-color: $solid-danger-5;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-left: 36px;
+    margin-right: 36px;
+    padding: 8px;
+    border-radius: 8px;
+    text-align: left;
+    display: flex;
+    // opacity: 16%;
+  }
+  .empty-title{
+      @include roboto-16-semibold;
+      margin-bottom: 10px;
+      margin-top: 24px;
+  }
+  .empty-msg{
+    @include roboto-14-semibold;
+    margin-bottom: 10px;
+    margin-top: 24px;
+  }
+  .empty-desc{
+      @include roboto-12-normal;
+  }
+  .sidemodal-msg{
+    @include roboto-14-normal;
+  }
+  .error-msg{
+      color: $solid-danger-50;
+      text-align: left;
+  }
+}
+
+.hide{
+  display: none !important;
+}
+
+
+
+.table-head p{
+  @include roboto-16-bold;
+  margin-bottom: 0px;
+	font-size: calc(min(max(12px, 2vw), 16px)) !important;
+}
+.table-money{		
+  display: flex;
+  justify-content: space-between;
+}
+.table-money p{	
+  @include roboto-16-normal;
+  margin-bottom: 0px;
+	font-size: calc(min(max(12px, 2vw), 16px)) !important;
+}
+.table-number{		
+  text-align: left !important;
+}
+.table-number p{		
+  @include roboto-16-normal;
+  margin-bottom: 0px;
+	font-size: calc(min(max(12px, 2vw), 16px)) !important;
+}
+.table-date{		
+  text-align: left !important;
+}
+.table-date p{	
+  @include roboto-16-normal;	
+  margin-bottom: 0px;
+	font-size: calc(min(max(12px, 2vw), 16px)) !important;
+}
+.table-text p{	
+  @include roboto-16-normal;	
+  margin-bottom: 0px;
+	font-size: calc(min(max(12px, 2vw), 16px)) !important;
+}
+
+
+
+
+
+.pagination {
+  display: flex;
+  justify-content: space-between;
+}
+.pagination.top {
+  margin-bottom: 30px;
+}
+.pagination.bottom {
+  margin-top: 20px;
+}
+.pagination-nav {
+  display: inline-block;
+}
+.pagination-nav a {
+  @include roboto-14-normal;	
+  color:  $solid-danger-50;
+  background-color: $white;
+  float: left;
+  padding: 4px 12px;
+  text-decoration: none;
+  border: 1px solid #ddd;
+  border-width: 1px 1px 1px 0 ;
+}
+.pagination-nav a.disabled {
+  color:  $text-alpha-black-04;
+}
+.pagination-nav a.active {
+  background-color: $solid-danger-50;
+  color: $white;
+  border-color:  $solid-danger-50;
+  cursor: pointer;
+}
+.pagination-nav a:hover:not(:disabled) {
+  // background-color: $solid-danger-50;
+  // color: $white;
+  // border-color:  $solid-danger-50;
+  // outline-color: $solid-danger-50;
+  cursor: pointer;
+}
+.pagination-nav a:first-child {
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+  border-width: 1px 1px 1px 1px ;
+}
+.pagination-nav a:last-child {
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+}
+
+.label-red{
+  color: $text-solid-danger-50;
+}
+.label-red-small{
+  font-size: 14px !important;	
+  color: $text-solid-danger-50;
+}
+.label-green{
+  color: $text-solid-success-50;
+}
+
+.v-align-center{
+  display: flex !important;
+  align-items: center !important;
+}
+
+.wrap-content{
+  flex-wrap: wrap !important;
+}

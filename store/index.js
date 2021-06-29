@@ -7,20 +7,20 @@ const state = {
 
 const actions = {
 	nuxtServerInit(context) {
-		actions.getAllItems(context, this);
+		// actions.getAllItems(context, this);
 	},
 	async getAllItems(context, _ = this){
-		var config = {
-			method: 'get',
-			url: '',
-		};
+		// var config = {
+		// 	method: 'get',
+		// 	url: '',
+		// };
 	  
-		let {data} = await _.$axios(config);
-		if (data != null){
-			if (data.items != null ) context.commit('setItems', data.items);
-			if (data.categories != null ) context.commit('setCategories', data.categories);
-		}
-		return data;
+		// let {data} = await _.$axios(config);
+		// if (data != null){
+		// 	if (data.items != null ) context.commit('setItems', data.items);
+		// 	if (data.categories != null ) context.commit('setCategories', data.categories);
+		// }
+		// return data;
 	},
 };
   

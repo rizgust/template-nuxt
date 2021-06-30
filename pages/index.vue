@@ -1,28 +1,9 @@
 <template>
-	<div class="page-wrapper">
-		MAIN PAGE
-	</div>
+  <Tutorial/>
 </template>
 
-<script>
-  import Vue from 'vue'
+<script lang="ts">
+import Vue from 'vue'
 
-  export default Vue.extend({
-    components: {
-    },
-	data(){
-		return {
-		}
-	},
-    created() {
-		// this.$store.commit('login',11);
-    },
-    computed: {
-	},	
-	methods:{  
-	}
-  })
+export default Vue.extend({})
 </script>
-
-<style lang="scss" scoped>
-</style>

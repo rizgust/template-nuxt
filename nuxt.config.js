@@ -21,8 +21,13 @@ export default {
 
   // Global CSS: https://go.nuxtjs.dev/config-css
   css: [
-    '.design-system/core/assets/styles/main'
+    '.design-system/core/assets/styles/main',
+    './assets/styles/global',
   ],
+
+  styleResources: {
+    scss: [ '.design-system/core/assets/styles/global.scss']
+  },
 
   // Plugins to run before rendering page: https://go.nuxtjs.dev/config-plugins
   plugins: [
@@ -32,6 +37,9 @@ export default {
 
   // Auto import components: https://go.nuxtjs.dev/config-components
   components: true,
+  // components: [
+  //   '.design-system/core/components/',
+  // ],
 
   // Modules for dev and build (recommended): https://go.nuxtjs.dev/config-modules
   buildModules: [
@@ -41,6 +49,7 @@ export default {
 
   // Modules: https://go.nuxtjs.dev/config-modules
   modules: [
+    '@nuxtjs/style-resources',
     'nuxt-svg-loader',
   ],
 

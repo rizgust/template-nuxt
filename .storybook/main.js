@@ -6,6 +6,7 @@ module.exports = {
     plugins: [
       '@babel/plugin-proposal-class-properties',
       '@babel/plugin-proposal-private-methods',
+      '@babel/plugin-proposal-private-property-in-object'
     ],
   }),
   
@@ -27,6 +28,5 @@ module.exports = nuxifyStorybook({
     '@storybook/addon-knobs',
     '@storybook/addon-notes',
     '@storybook/addon-options',
-    '@whitespace/storybook-addon-html'
   ]
 })

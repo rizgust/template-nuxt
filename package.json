@@ -18,7 +18,6 @@
     "nuxt-svg-loader": "^1.2.0"
   },
   "devDependencies": {
-    "@khriztianmoreno/storybook-addon-raw-styled-component": "^0.8.1",
     "@nuxt/types": "^2.15.7",
     "@nuxt/typescript-build": "^2.1.0",
     "@nuxtjs/storybook": "^4.0.4",
@@ -27,7 +26,6 @@
     "@storybook/addon-knobs": "^6.3.0",
     "@storybook/addon-notes": "^5.3.21",
     "@storybook/addon-options": "^5.3.21",
-    "@whitespace/storybook-addon-html": "^5.0.0",
     "highlight.js": "^11.0.1",
     "node-sass": "^6.0.1",
     "postcss": "^8.3.5",

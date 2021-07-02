@@ -1,5 +1,16 @@
 const { nuxifyStorybook } = require('../.nuxt-storybook/storybook/main.js')
+module.exports = {
+  babel: async options => ({
+    ...options,
 
+    plugins: [
+      '@babel/plugin-proposal-class-properties',
+      '@babel/plugin-proposal-private-methods',
+    ],
+  }),
+  
+  // ... other settings here
+}
 module.exports = nuxifyStorybook({
   webpackFinal (config, options) {
 
@@ -9,7 +20,7 @@ module.exports = nuxifyStorybook({
   },
   stories: [
     '../.design-system/storybook/stories/**/*-story.js',
-    './stories/**/*-story.js'
+    // './stories/**/*-story.js'
   ],
   addons: [    
     '@storybook/addon-actions',

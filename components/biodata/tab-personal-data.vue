@@ -119,7 +119,7 @@
         </select>
       </div>
       <div class="form-buttons-w">
-        <button class="btn btn-primary" type="submit"> Update</button>
+        <button class="btn btn-primary" type="button"> Update</button>
       </div>
     </form>
   </div>

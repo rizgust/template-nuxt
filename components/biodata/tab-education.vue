@@ -23,7 +23,7 @@
           </div>
           <div class="form-group row">
             <label class="col-sm-4" for=""> Tanggal Surat Keterangan Hasil Ujian Nasional (SKHUN)</label>
-            <rds-date-picker kind="single" date-label="" class="col-sm-8" :value="new Date()" />
+            <rds-date-picker kind="single" date-label="" class="customDatePicker col-sm-8" :value="new Date()" />
           </div>
           <div class="form-group row">
             <label class="col-sm-4" for=""> Nomer Surat Keterangan Hasil Ujian Nasional (SKHUN)</label>
@@ -35,7 +35,7 @@
           </div>
           <div class="form-group row">
             <label class="col-sm-4" for=""> Tanggal Ijazah</label>
-            <rds-date-picker kind="single" date-label="" class="col-sm-8" :value="new Date()" />
+            <rds-date-picker kind="single" date-label="" class="customDatePicker col-sm-8" :value="new Date()" />
           </div>
           <div class="form-group row">
             <label class="col-sm-4" for=""> Nomor Ijazah</label>
@@ -79,7 +79,7 @@
           </div>
           <div class="form-group row ">
             <label class="col-sm-4">Tanggal Masuk</label>
-            <rds-date-picker kind="single" date-label="" class="col-sm-8" :value="new Date()" />
+            <rds-date-picker kind="single" date-label="" class="customDatePicker col-sm-8" :value="new Date()" />
           </div>
           <div class="form-group row ">
             <label class="col-sm-4 form-control-label"> Alasan Pindah Sekolah</label>
@@ -147,5 +147,11 @@ export default {
 }
 .box-body, .box-footer, .box-header {
   padding: 1rem;
+}
+
+.customDatePicker >>> .bx--date-picker,
+.customDatePicker >>> .bx--date-picker-container,
+.customDatePicker >>> .bx--date-picker__input {
+  width: 100% !important;
 }
 </style>

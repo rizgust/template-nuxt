@@ -13,7 +13,7 @@
 <script>
 import { RdsTab, RdsTabs } from '@/.design-system/core/components/rds-tabs/';
 import { RdsButton } from '@/.design-system/core/components/rds-button/';
-import TabParentDataForm from '@/components/biodata/tab-parent-data-form.vue';
+import TabParentDataForm from '~/components/biodata/student/tab-parent-data-form.vue';
 
 export default {
   name: 'TabParentData',

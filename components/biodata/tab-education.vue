@@ -42,8 +42,7 @@
             <rds-text-input class="col-sm-8" placeholder="Nomor Ijazah" />
           </div>
         </div>
-        <div class="col-md-6">
-          
+        <div class="col-md-6">          
           <div class="form-group row">
             <label class="col-sm-4" for=""> Lama Belajar</label>
             <div class="col-sm-8" style="display: flex;">

@@ -12,7 +12,8 @@
         </div>
         <div class="form-group row">
           <label class="col-sm-4" for=""> Tempat, Tanggal Lahir</label>
-          
+          <rds-text-input class="col-sm-4" placeholder="Tempat" />
+          <rds-date-picker class="customDatePicker col-sm-4" kind="single" date-label="" :value="new Date()" />
         </div>
         <div class="form-group row">
           <label class="col-sm-4" for=""> Agama</label>
@@ -127,5 +128,10 @@ export default {
 <style scoped>
 .tab-section {
   padding: 20px;
+}
+.customDatePicker >>> .bx--date-picker,
+.customDatePicker >>> .bx--date-picker-container,
+.customDatePicker >>> .bx--date-picker__input {
+  width: 100% !important;
 }
 </style>

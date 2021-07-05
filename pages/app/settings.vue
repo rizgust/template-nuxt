@@ -38,7 +38,7 @@
                 <small>Update your login information.</small>
               </div>
               <div class="box-body padding">
-                <form action="post">
+                <form action="">
                   <div class="form-group">
                     <label for="#" class="bx--label d-block">Username</label>
                     <!-- dummy Username -->
@@ -88,7 +88,7 @@
                 <small>Update your PIN information.</small>
               </div>
               <div class="box-body padding">
-                <form action="post">
+                <form action="">
                   <div class="form-group">
                     <RdsTextInput
                       :label="'New PIN'"

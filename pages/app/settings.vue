@@ -54,31 +54,31 @@
                     <!-- dummy Username -->
                     <small>office@mumtaz.app</small>
                   </div>
-                <div class="form-group">
-                  <RdsTextInput
-                    :label="'Old Password'"
-                    :type="'password'"
-                    :placeholder="'Enter your old password here'">
-                  </RdsTextInput>
-                </div>
-                <div class="form-group">
-                  <RdsTextInput
-                    :label="'Password'"
-                    :type="'password'"
-                    :placeholder="'Enter your password here'">
-                  </RdsTextInput>
-                </div>
-                <div class="form-group">
-                  <RdsTextInput
-                    :label="'Repeat Password'"
-                    :type="'password'"
-                    :placeholder="'Enter your repeat password here'">
-                  </RdsTextInput>
-                </div>
-                <div class="buttons-w">
-                  <RdsButton :kind="'primary'" :size="'small'"> Update </RdsButton>
-                </div>
-              </form>
+                  <div class="form-group">
+                    <RdsTextInput
+                      :label="'Old Password'"
+                      :type="'password'"
+                      :placeholder="'Enter your old password here'">
+                    </RdsTextInput>
+                  </div>
+                  <div class="form-group">
+                    <RdsTextInput
+                      :label="'Password'"
+                      :type="'password'"
+                      :placeholder="'Enter your password here'">
+                    </RdsTextInput>
+                  </div>
+                  <div class="form-group">
+                    <RdsTextInput
+                      :label="'Repeat Password'"
+                      :type="'password'"
+                      :placeholder="'Enter your repeat password here'">
+                    </RdsTextInput>
+                  </div>
+                  <div class="buttons-w">
+                    <RdsButton :kind="'primary'" :size="'small'"> Update </RdsButton>
+                  </div>
+                </form>
               </div>
             </div>
           </div>

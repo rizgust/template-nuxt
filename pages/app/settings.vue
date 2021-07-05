@@ -39,6 +39,21 @@
               </div>
               <div class="box-body">
                 <form action="post">
+                  <div class="form-group">
+                    <label for="#" class="bx--label d-block">Username</label>
+                    <!-- dummy Username -->
+                    <small>admin</small>
+                  </div>
+                  <div class="form-group">
+                    <label for="#" class="bx--label d-block">Account-ID</label>
+                    <!-- dummy Username -->
+                    <small>admin@account.id</small>
+                  </div>
+                  <div class="form-group">
+                    <label for="#" class="bx--label d-block">Email</label>
+                    <!-- dummy Username -->
+                    <small>office@mumtaz.app</small>
+                  </div>
                 <div class="form-group">
                   <RdsTextInput
                     :label="'Old Password'"

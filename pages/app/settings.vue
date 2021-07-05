@@ -81,6 +81,40 @@
                 </form>
               </div>
             </div>
+            <div class="box">
+              <div class="box-title">
+                <h5>Update PIN Setting</h5>
+                <small>Update your PIN information.</small>
+              </div>
+              <div class="box-body">
+                <form action="post">
+                  <div class="form-group">
+                    <RdsTextInput
+                      :label="'New PIN'"
+                      :type="'password'"
+                      :placeholder="'Enter your new pin here'">
+                    </RdsTextInput>
+                  </div>
+                  <div class="form-group">
+                    <RdsTextInput
+                      :label="'Repeat New PIN'"
+                      :type="'password'"
+                      :placeholder="'Enter your repeat new PIN here'">
+                    </RdsTextInput>
+                  </div>
+                  <div class="form-group">
+                    <RdsTextInput
+                      :label="'Password'"
+                      :type="'password'"
+                      :placeholder="'Enter your password here'">
+                    </RdsTextInput>
+                  </div>
+                  <div class="buttons-w">
+                    <RdsButton :kind="'primary'" :size="'small'"> Update </RdsButton>
+                  </div>
+                </form>
+              </div>
+            </div>
           </div>
         </div>
       </div>

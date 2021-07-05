@@ -33,11 +33,11 @@
         <div class="col-sm-12">
           <div class="padding">
             <div class="box">
-              <div class="box-title">
+              <div class="box-title padding">
                 <h5>Profile Setting</h5>
                 <small>Update your login information.</small>
               </div>
-              <div class="box-body">
+              <div class="box-body padding">
                 <form action="post">
                   <div class="form-group">
                     <label for="#" class="bx--label d-block">Username</label>
@@ -82,11 +82,11 @@
               </div>
             </div>
             <div class="box">
-              <div class="box-title">
+              <div class="box-title padding">
                 <h5>Update PIN Setting</h5>
                 <small>Update your PIN information.</small>
               </div>
-              <div class="box-body">
+              <div class="box-body padding">
                 <form action="post">
                   <div class="form-group">
                     <RdsTextInput
@@ -139,5 +139,21 @@ export default {
   }
   .padding{
     padding: 1.5rem;
+  }
+  .box{
+    box-shadow: 0 1px 4px #a1a1a1, 0 0px 0 #000;
+    &:not(:last-child){
+      margin-bottom: 2rem;
+    }
+    .box-title{
+      background-color: rgba(0,0,0,.035);
+      h5{
+        font-size: 1.25rem;
+        margin-bottom: 0.5rem;
+      }
+      small{
+        font-size: 1rem;
+      }
+    }
   }
 </style>

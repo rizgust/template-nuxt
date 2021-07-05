@@ -58,7 +58,8 @@
                     <RdsTextInput
                       :label="'Old Password'"
                       :type="'password'"
-                      :placeholder="'Enter your old password here'">
+                      :placeholder="'Enter your old password here'"
+                      :passwordVisible="true">
                     </RdsTextInput>
                   </div>
                   <div class="form-group">
@@ -76,7 +77,7 @@
                     </RdsTextInput>
                   </div>
                   <div class="buttons-w">
-                    <RdsButton :kind="'primary'" :size="'small'"> Update </RdsButton>
+                    <RdsButton :kind="'primary'" :size="'small'" class="btn-submit-primary"> Update </RdsButton>
                   </div>
                 </form>
               </div>
@@ -110,7 +111,7 @@
                     </RdsTextInput>
                   </div>
                   <div class="buttons-w">
-                    <RdsButton :kind="'primary'" :size="'small'"> Update </RdsButton>
+                    <RdsButton :kind="'primary'" :size="'small'" class="btn-submit-primary"> Update </RdsButton>
                   </div>
                 </form>
               </div>
@@ -154,6 +155,18 @@ export default {
       small{
         font-size: 1rem;
       }
+    }
+  }
+  .btn-submit-primary{
+    background-color: #0cc2aa;
+    border-radius: .2rem;
+    color: rgba(255,255,255,.87);
+    padding: .3445rem .75rem;
+    &:hover, &:focus{
+      background-color: #0cc2aa;
+      border-color: transparent;
+      box-shadow: none;
+      outline: none;
     }
   }
 </style>

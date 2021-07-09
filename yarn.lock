@@ -1097,10 +1097,10 @@
   resolved "https://registry.yarnpkg.com/@carbon/icon-helpers/-/icon-helpers-10.19.0.tgz#f6b608b181b4ca4aeeadac72ec11b7cf530b4d1c"
   integrity sha512-2eIecDuoEEx+nORHtTBmj5lV/N4Q1kP7XCZUkF15WfXxZHx2RI6KhS4HnMPDoylguhavnRjSIK1gl6oG3Z3wSQ==
 
-"@carbon/icons-vue@^10.34.0":
-  version "10.34.0"
-  resolved "https://registry.yarnpkg.com/@carbon/icons-vue/-/icons-vue-10.34.0.tgz#c2f90a88b34c3caf6265edc85e540bbc2d866700"
-  integrity sha512-kdtYWcVkQJlzTqIc8hKSB82HJTAkCcrC8+jLAtnpw4Xl5T/agdYAoQai8k95h03vLlE9Jkv8JnjMGL5nCooCNA==
+"@carbon/icons-vue@^10.35.0":
+  version "10.35.0"
+  resolved "https://registry.yarnpkg.com/@carbon/icons-vue/-/icons-vue-10.35.0.tgz#096ab9323d6408ece3de9119d4fafc08681bcbf4"
+  integrity sha512-xHT7nAoSHFiv9vB4xUEXmX+K5PQRaxQOhVHaIZUy5z3lAzj3fiusgeLL/84xy74KIH9s22pmM6AcApsY68aCZg==
   dependencies:
     "@carbon/icon-helpers" "^10.19.0"
 

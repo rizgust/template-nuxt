@@ -1,3 +1,6 @@
 [submodule ".design-system"]
 	path = .design-system
 	url = git@github.com:rizgust/design-system-vue.git
+[submodule "design-system-vue"]
+	path = design-system-vue
+	url = git@github.com:rizgust/design-system-vue.git

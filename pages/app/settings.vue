@@ -1,0 +1,143 @@
+<template>
+  <div class="wrapper">
+    <div class="row">
+      <div class="col-sm-12">
+        <div class="padding">
+          <div class="box">
+            <div class="box-title padding">
+              <h5>Profile Setting</h5>
+              <small>Update your login information.</small>
+            </div>
+            <div class="box-body padding">
+              <form action="">
+                <div class="form-group">
+                  <label for="#" class="bx--label d-block">Username</label>
+                  <!-- dummy Username -->
+                  <small>admin</small>
+                </div>
+                <div class="form-group">
+                  <label for="#" class="bx--label d-block">Account-ID</label>
+                  <!-- dummy Username -->
+                  <small>admin@account.id</small>
+                </div>
+                <div class="form-group">
+                  <label for="#" class="bx--label d-block">Email</label>
+                  <!-- dummy Username -->
+                  <small>office@mumtaz.app</small>
+                </div>
+                <div class="form-group">
+                  <RdsTextInput
+                    :label="'Old Password'"
+                    :type="'password'"
+                    :placeholder="'Enter your old password here'"
+                    :passwordVisible="true">
+                  </RdsTextInput>
+                </div>
+                <div class="form-group">
+                  <RdsTextInput
+                    :label="'Password'"
+                    :type="'password'"
+                    :placeholder="'Enter your password here'">
+                  </RdsTextInput>
+                </div>
+                <div class="form-group">
+                  <RdsTextInput
+                    :label="'Repeat Password'"
+                    :type="'password'"
+                    :placeholder="'Enter your repeat password here'">
+                  </RdsTextInput>
+                </div>
+                <div class="buttons-w">
+                  <RdsButton :kind="'primary'" :size="'small'" class="btn-submit-primary"> Update </RdsButton>
+                </div>
+              </form>
+            </div>
+          </div>
+          <div class="box">
+            <div class="box-title padding">
+              <h5>Update PIN Setting</h5>
+              <small>Update your PIN information.</small>
+            </div>
+            <div class="box-body padding">
+              <form action="">
+                <div class="form-group">
+                  <RdsTextInput
+                    :label="'New PIN'"
+                    :type="'password'"
+                    :placeholder="'Enter your new pin here'">
+                  </RdsTextInput>
+                </div>
+                <div class="form-group">
+                  <RdsTextInput
+                    :label="'Repeat New PIN'"
+                    :type="'password'"
+                    :placeholder="'Enter your repeat new PIN here'">
+                  </RdsTextInput>
+                </div>
+                <div class="form-group">
+                  <RdsTextInput
+                    :label="'Password'"
+                    :type="'password'"
+                    :placeholder="'Enter your password here'">
+                  </RdsTextInput>
+                </div>
+                <div class="buttons-w">
+                  <RdsButton :kind="'primary'" :size="'small'" class="btn-submit-primary"> Update </RdsButton>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</template>
+
+<script>
+import { RdsButton } from '@/.design-system/core/components/rds-button/';
+import { RdsTextInput } from '@/.design-system/core/components/rds-text-input/';
+
+export default {
+  components: {
+    RdsButton,
+    RdsTextInput
+  }
+};
+</script>
+
+<style lang="scss">
+  body:before {
+    background: #f0f0f0;
+  }
+  .padding{
+    padding: 1.5rem;
+  }
+  .box{
+    box-shadow: 0 1px 4px #a1a1a1, 0 0px 0 #000;
+    &:not(:last-child){
+      margin-bottom: 2rem;
+    }
+    .box-title{
+      background-color: rgba(0,0,0,.035);
+      h5{
+        font-size: 1.25rem;
+        margin-bottom: 0.5rem;
+      }
+      small{
+        font-size: 1rem;
+      }
+    }
+  }
+  .btn-submit-primary{
+    background-color: #0cc2aa;
+    border-radius: .2rem;
+    color: rgba(255,255,255,.87);
+    padding: .3445rem .75rem;
+    &:hover, &:focus{
+      background-color: #0cc2aa;
+      border-color: transparent;
+      box-shadow: none;
+      outline: none;
+    }
+  }
+</style>

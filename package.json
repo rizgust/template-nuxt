@@ -14,7 +14,7 @@
     "@carbon/icons-vue": "^10.34.0",
     "core-js": "^3.15.1",
     "flatpickr": "^4.6.9",
-    "nuxt": "^2.15.7",
+    "nuxt": "^2.15.8",
     "nuxt-svg-loader": "^1.2.0"
   },
   "devDependencies": {

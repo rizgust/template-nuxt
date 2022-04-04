@@ -1092,17 +1092,17 @@
   resolved "https://registry.yarnpkg.com/@base2/pretty-print-object/-/pretty-print-object-1.0.0.tgz#860ce718b0b73f4009e153541faff2cb6b85d047"
   integrity sha512-4Th98KlMHr5+JkxfcoDT//6vY8vM+iSPrLNpHhRyLx2CFYi8e2RfqPLdpbnpo0Q5lQC5hNB79yes07zb02fvCw==
 
-"@carbon/icon-helpers@^10.19.0":
-  version "10.19.0"
-  resolved "https://registry.yarnpkg.com/@carbon/icon-helpers/-/icon-helpers-10.19.0.tgz#f6b608b181b4ca4aeeadac72ec11b7cf530b4d1c"
-  integrity sha512-2eIecDuoEEx+nORHtTBmj5lV/N4Q1kP7XCZUkF15WfXxZHx2RI6KhS4HnMPDoylguhavnRjSIK1gl6oG3Z3wSQ==
+"@carbon/icon-helpers@^10.29.0":
+  version "10.29.0"
+  resolved "https://registry.yarnpkg.com/@carbon/icon-helpers/-/icon-helpers-10.29.0.tgz#686bc5a337bec6d8fb482655f4564f3376452a35"
+  integrity sha512-QlYdeL97klhqahsayK6uEDPtr7imU4bdaudWPVZojg+7Uio3WNzb5iUNLkWA5zRLvP4xgcjSpbdDX2sT3CgL2A==
 
-"@carbon/icons-vue@^10.34.0":
-  version "10.34.0"
-  resolved "https://registry.yarnpkg.com/@carbon/icons-vue/-/icons-vue-10.34.0.tgz#c2f90a88b34c3caf6265edc85e540bbc2d866700"
-  integrity sha512-kdtYWcVkQJlzTqIc8hKSB82HJTAkCcrC8+jLAtnpw4Xl5T/agdYAoQai8k95h03vLlE9Jkv8JnjMGL5nCooCNA==
+"@carbon/icons-vue@^10.49.1":
+  version "10.49.1"
+  resolved "https://registry.yarnpkg.com/@carbon/icons-vue/-/icons-vue-10.49.1.tgz#fd6faddc7364160c5acd60c6eaf245e86a004403"
+  integrity sha512-bUomWnlpfuFWOszjBvNlpQiV8CuTIFZnmmuSbxEiXFXBMhAqRctqbtY4ZHKm8tTiuHafCuuY/onad3rrcVLfTA==
   dependencies:
-    "@carbon/icon-helpers" "^10.19.0"
+    "@carbon/icon-helpers" "^10.29.0"
 
 "@cnakazawa/watch@^1.0.3":
   version "1.0.4"

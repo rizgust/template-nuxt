@@ -26,7 +26,7 @@
     "@storybook/addon-notes": "^5.3.21",
     "@storybook/addon-options": "^5.3.21",
     "@whitespace/storybook-addon-html": "^5.0.0",
-    "highlight.js": "^11.0.1",
+    "highlight.js": "^11.5.1",
     "node-sass": "^6.0.1",
     "postcss": "^8.3.5",
     "sass-loader": "^10",
